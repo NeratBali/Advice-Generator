@@ -120,11 +120,13 @@
     z-index: 3;
     bottom: 30px;
     cursor: pointer;
-    outline: none;
+    outline: none !important;
+    border: none;
     align-items: center;
     display: flex;
     justify-content: center;
 }
+
 .shape{
     width: 64px; 
     height: 64px;
