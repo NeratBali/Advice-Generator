@@ -1,0 +1,149 @@
+.div1{
+    display: flex;
+    width: 'vh';
+    height: 'vh';
+    padding: 223px 450px;
+    justify-content: center;
+    align-items: center;
+    background: var(--Dark-blue, #202733);
+}
+.div2{
+    width: 540px;
+    height: 364px;
+    /* flex-shrink: 0; */
+    background: var(--Dark-blue, #202733);
+}
+.div3{
+    width: 540px;
+    height: 332px;
+    /* flex-shrink: 0; */
+    border-radius: 15px;
+    background: var(--Dark-Grayish-Blue, #313A48);
+    box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.10);
+}
+#adviceNumber{
+    color: var(--Neon-Green, #53FFAA);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+/* Heading */
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 4.086px;
+    padding-top: 48px;
+}
+#advice{
+    color: var(--Light-Cyan, #CEE3E9);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Quote */
+    font-family: Manrope;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+#line-container{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 48px;
+    text-align: center;
+    background:  var(--Dark-Grayish-Blue, #313A48);
+    /* flex-shrink: 0; */
+}
+.lines{
+    width: 196px;
+    height: 1px;
+    background: var(--Grayish-Blue, #4F5D74);
+    flex-shrink: 0;
+}
+#first-line{
+    padding-left: 48px;
+}
+#second-line{
+    padding-right: 48px;
+    
+}
+.rectangles-container{
+    display: flex; 
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    height: 16px;
+    padding-left:261px;
+    padding-top: 40px ;
+}
+.group{
+    width: 20px; 
+    height: 16px; 
+    position: relative;
+}
+.rectangle{
+    width: 6px; 
+    height: 16px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: #CEE3E9; 
+    border-radius: 3px;
+    
+}
+.rectangle2{
+    width: 6px; 
+    height: 16px; 
+    left: 12px; 
+    top: 0px; 
+    position: relative; 
+    background: #CEE3E9; 
+    border-radius: 3px
+}
+.group3{
+    display: flex;
+    justify-self: normal;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    position: absolute;
+    padding-left: 238px;
+}
+#oval{
+    width: 64px; 
+    height: 64px; 
+    position: absolute; 
+    background: #53FFAA; 
+    border-radius: 9999px;
+    z-index: 3;
+    bottom: 30px;
+    cursor: pointer;
+    outline: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.shape{
+    width: 64px; 
+    height: 64px;
+}
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 255, 0, 0.7); /* Start with a subtle glow */
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.9); /* Increase the glow */
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(0, 255, 0, 0.7); /* Return to a subtle glow */
+    }
+  }
+  
+  /* Apply the animation to an element */
+ 
+#oval:hover{
+    animation: glow 3s infinite ; /* 1s duration, infinite loop */
+}
+
